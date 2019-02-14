@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Enter Patient Details</h1>
+          <hr/>
+          <br/>
+          <div id="loader">
+          </div>
+          <div id="content" style="display: none;">
+            <form >
+              <div class="form-group">
+                  <label for="usr">Name:</label>
+                  <input type="text" class="form-control" id="usr">
+              </div>
+              <div class="form-group">
+                  <label for="age">Age:</label>
+                  <input type="text" class="form-control" id="age">
+              </div>
+              <div class="form-group">
+                  <label for="weight">Weight:</label>
+                  <input type="text" class="form-control" id="weight">
+              </div>
+              <div class="form-group">
+                  <label for="weight">Gender:</label>
+                  <input type="text" class="form-control" id="gender">
+              </div>
+              <div class="form-group">
+                  <label for="symptoms">Symptoms:</label>
+                  <input type="text" class="form-control" id="symptoms">
+              </div>
+              <div class="form-group">
+                <button type="button" onclick="App.AddedRecord();" class="btn btn-primary">Add Record</button>
+              </div>
+
+            </form>
+        </div>
+
+<div id="showId" style="display: none">
+
+  <h2>Record ID</h2>
+  <p>Please note your Record ID. It can be useful later on.</p>
+  <p id="idDisplay"  style="font-weight:bold"></p>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

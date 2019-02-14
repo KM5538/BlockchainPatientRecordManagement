@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+       button {
+           margin-bottom: 10px;
+           margin-top: 10px;
+           margin-left: 200px;
+           text-align: center;
+           width: 150px !important;
+
+       }
+
+       #b1input{
+
+           margin-left: 100px;
+           margin-right: 100px;
+
+       }
+
+       #a{
+
+           margin-top:20px;
+       }
+
+
+   </style>
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Blockchain Technology for Electronic Health Records</h1>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+            <!-- <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Age</th>
+                  <th scope="col">Weight</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Symptoms</th>
+                  <th scope="col">Feedback</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table> -->
+            <hr/>
+            <p id="accountAddress" class="text-center"></p>
+
+            <form >
+              <div>
+                <button type="button" onclick="App.register();" class="btn btn-primary" >Register As Doctor</button>
+              </div>
+              <div>
+                <button type="button" onclick="App.register();" class="btn btn-primary">Register As Patient</button>
+              </div>
+              <div>
+                <button type="button" onclick="App.register();" class="btn btn-primary">Register As Insurer</button>
+              </div>
+              <div>
+                <button type="button" onclick="App.register();" class="btn btn-primary"> Register As Lab</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
